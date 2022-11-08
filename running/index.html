@@ -136,11 +136,11 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/webApp.loader.js";
+        const loaderUrl = buildUrl + "/webApp-Run.loader.js";
         const config = {
-            dataUrl: buildUrl + "/webApp.data.unityweb",
-            frameworkUrl: buildUrl + "/webApp.framework.js.unityweb",
-            codeUrl: buildUrl + "/webApp.wasm.unityweb",
+            dataUrl: buildUrl + "/webApp-Run.data.unityweb",
+            frameworkUrl: buildUrl + "/webApp-Run.framework.js.unityweb",
+            codeUrl: buildUrl + "/webApp-Run.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "zapperTest",
