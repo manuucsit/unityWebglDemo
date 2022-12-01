@@ -28,10 +28,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: write Index
-        run: python WriteIndex.py
       - name: Checkout
         uses: actions/checkout@v3
+      - name: write index
+        run: python WriteIndex.py
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
