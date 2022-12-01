@@ -1,1 +1,2 @@
-print('hi')
+import os
+print(os.listdir())
