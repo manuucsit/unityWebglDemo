@@ -21,3 +21,7 @@ outHtml = outHtml + '<h1> this is a test <h1>\
 f = open("index.html", 'wt')
 f.write(outHtml)
 f.close()
+
+f=open("index.html", "rt")
+print(f.read())
+f.close()
