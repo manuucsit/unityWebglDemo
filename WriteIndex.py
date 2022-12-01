@@ -11,17 +11,16 @@ outHtml = '<!DOCTYPE html>\
 <body>\
   '
 
-#link dirs
+# link dirs
+for labels in folders:
+    outHtml = outHtml + '<a href="manuucsit.github.io/unityWebglDemo/' + labels + '">'+labels+'</a><br>'
 
-
-outHtml = outHtml + '<h1> this is a test <h1>\
-    </body>\
-    </html>'
+outHtml = outHtml + '</body></html>'
 
 f = open("index.html", 'wt')
 f.write(outHtml)
 f.close()
 
-f=open("index.html", "rt")
+f = open("index.html", "rt")
 print(f.read())
 f.close()
