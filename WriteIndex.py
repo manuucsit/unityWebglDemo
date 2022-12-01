@@ -13,7 +13,7 @@ outHtml = '<!DOCTYPE html>\
 
 # link dirs
 for labels in folders:
-    outHtml = outHtml + '<a href="manuucsit.github.io/unityWebglDemo/' + labels + '">'+labels+'</a><br>'
+    outHtml = outHtml + '<a href="' + labels + '">'+labels+'</a><br>'
 
 outHtml = outHtml + '</body></html>'
 
