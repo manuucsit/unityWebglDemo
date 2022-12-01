@@ -1,2 +1,6 @@
 import os
-print(os.listdir())
+
+folders = os.listdir()
+folders.remove('.git')
+
+print(folders)
