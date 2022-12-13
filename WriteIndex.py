@@ -27,3 +27,6 @@ f.close()
 f = open("index.html", "rt")
 print(f.read())
 f.close()
+
+os.system('git add index.html')
+os.system('git commit -m "[Triggers] Index" --no-verify')
