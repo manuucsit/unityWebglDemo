@@ -3,10 +3,8 @@ import os
 folders = os.listdir()
 
 for x in folders:
-  if x.__contains__('.'):
+  if '.' in x:
     folders.remove(x)
-
-folders.remove('.github')
 
 outHtml = '<!DOCTYPE html>\
 <html lang="en">\
