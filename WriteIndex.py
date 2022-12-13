@@ -1,7 +1,12 @@
 import os
 
 folders = os.listdir()
-folders.remove('.git')
+
+for x in folders:
+  if x.__contains__('.'):
+    folders.remove(x)
+
+folders.remove('.github')
 
 outHtml = '<!DOCTYPE html>\
 <html lang="en">\

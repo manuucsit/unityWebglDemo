@@ -42,7 +42,7 @@
             width: 100%;
             height: 100%;
 
-            background: #231F20;
+            background: #FFFFFF;
         }
 
         #loading-cover {
@@ -119,7 +119,7 @@
     </style>
 </head>
 
-<body class="dark">
+<body class="light">
     <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas"></canvas>
     </div>
@@ -136,11 +136,11 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/review.loader.js";
+        const loaderUrl = buildUrl + "/Folding-a-Letter.loader.js";
         const config = {
-            dataUrl: buildUrl + "/review.data.unityweb",
-            frameworkUrl: buildUrl + "/review.framework.js.unityweb",
-            codeUrl: buildUrl + "/review.wasm.unityweb",
+            dataUrl: buildUrl + "/Folding-a-Letter.data",
+            frameworkUrl: buildUrl + "/Folding-a-Letter.framework.js",
+            codeUrl: buildUrl + "/Folding-a-Letter.wasm",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "zapperTest",
