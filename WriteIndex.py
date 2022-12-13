@@ -3,7 +3,7 @@ import os
 folders = os.listdir()
 
 for x in folders:
-  if '.' in x:
+  if '.'==x[0] or '.' in x:
     folders.remove(x)
 
 outHtml = '<!DOCTYPE html>\
