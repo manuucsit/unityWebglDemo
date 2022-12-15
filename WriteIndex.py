@@ -16,7 +16,7 @@ outHtml = '<!DOCTYPE html>\n\
 <body>\n\
   '
 
-styles="a{\
+styles="<style>a{\
     background-color: rgb(202, 229, 243);\
     border-radius: 5px;\
     display: block;\
@@ -30,7 +30,7 @@ styles="a{\
 }\
 body{\
     background-color: rgb(31, 63, 82);\
-}"
+}</style>"
 
 outHtml += styles
 
