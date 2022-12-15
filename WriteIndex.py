@@ -11,11 +11,28 @@ for x in listDirs:
 outHtml = '<!DOCTYPE html>\n\
 <html lang="en">\n\
 <head>\n\
-  <link rel="stylesheet" href="styles.css">\n\
   <title>AR Anims</title>\n\
 </head>\n\
 <body>\n\
   '
+
+styles="a{\
+    background-color: rgb(202, 229, 243);\
+    border-radius: 5px;\
+    display: block;\
+    margin-top: 3px;\
+    margin-bottom: -15px;\
+    padding:10px;\
+    text-decoration: none;\
+    color: rgb(0, 0, 0);\
+    font-family: Arial, Helvetica, sans-serif;\
+    font-size: large;\
+}\
+body{\
+    background-color: rgb(31, 63, 82);\
+}"
+
+outHtml += styles
 
 # link dirs
 for labels in folders:
