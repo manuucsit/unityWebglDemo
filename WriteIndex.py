@@ -11,6 +11,7 @@ for x in listDirs:
 outHtml = '<!DOCTYPE html>\n\
 <html lang="en">\n\
 <head>\n\
+  <link rel="stylesheet" href="styles.css">\n\
   <title>AR Anims</title>\n\
 </head>\n\
 <body>\n\
