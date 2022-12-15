@@ -1,10 +1,12 @@
 import os
 
-folders = os.listdir()
+folders = []
 
-for x in folders:
-  if '.'==x[0] or '.' in x:
-    folders.remove(x)
+listDirs = os.listdir()
+
+for x in listDirs:
+  if os.path.isdir(x):
+    folders.append(x)
 
 outHtml = '<!DOCTYPE html>\
 <html lang="en">\
@@ -16,7 +18,7 @@ outHtml = '<!DOCTYPE html>\
 
 # link dirs
 for labels in folders:
-    outHtml = outHtml + '<a href="' + labels + '">'+labels+'</a><br>'
+    outHtml = outHtml + '<a href="' + labels + '/index.html">'+labels+'</a><br>'
 
 outHtml = outHtml + '</body></html>'
 
