@@ -5,7 +5,7 @@ folders = []
 listDirs = os.listdir()
 
 for x in listDirs:
-  if os.path.isdir(x):
+  if os.path.isdir(x) and x[0] != '.':
     folders.append(x)
 
 outHtml = '<!DOCTYPE html>\
