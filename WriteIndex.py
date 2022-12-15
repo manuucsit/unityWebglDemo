@@ -8,19 +8,19 @@ for x in listDirs:
   if os.path.isdir(x) and x[0] != '.':
     folders.append(x)
 
-outHtml = '<!DOCTYPE html>\
-<html lang="en">\
-<head>\
-  <title>AR Anims</title>\
-</head>\
-<body>\
+outHtml = '<!DOCTYPE html>\n\
+<html lang="en">\n\
+<head>\n\
+  <title>AR Anims</title>\n\
+</head>\n\
+<body>\n\
   '
 
 # link dirs
 for labels in folders:
-    outHtml = outHtml + '<a href="' + labels + '/index.html">'+labels+'</a><br>'
+    outHtml = outHtml + '\t<a href="' + labels + '/index.html">'+labels+'</a><br>\n'
 
-outHtml = outHtml + '</body></html>'
+outHtml = outHtml + '</body>\n</html>'
 
 f = open("index.html", 'wt')
 f.write(outHtml)
